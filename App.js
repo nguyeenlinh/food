@@ -9,6 +9,11 @@ import {
   TouchableOpacity
 } from 'react-native';
 import Swiper from 'react-native-swiper';
+const data = [
+  {
+    
+  }
+]
 
 const App = () => {
 
@@ -19,23 +24,40 @@ const App = () => {
         <Swiper style={styles.wrapper} showsButtons>
           <View style={styles.slide1}>
             <Image source={require('./image/h1.jpeg')} style={styles.anh}/>
+            <View style={{alignItems:'center', }}>
+              <Text style={{fontSize:25,color:"black"}}>Veggie tomato mix</Text>
+              <Text style={{fontSize:22,color:"#FA4A0C"}}>N1,900</Text>
+            </View>
+            
           </View>
           <View style={styles.slide2}>
           <Image source={require('./image/h2.jpeg')} style={styles.anh}/>
+          <View style={{alignItems:'center', }}>
+              <Text style={{fontSize:25,color:"black"}}>Veggie tomato mix</Text>
+              <Text style={{fontSize:22,color:"#FA4A0C"}}>N2,900</Text>
+            </View>
           </View>
           <View style={styles.slide3}>
           <Image source={require('./image/h1.jpeg')} style={styles.anh}/>
+          <View style={{alignItems:'center', }}>
+              <Text style={{fontSize:25,color:"black"}}>Veggie tomato mix</Text>
+              <Text style={{fontSize:22,color:"#FA4A0C"}}>N3,900</Text>
+            </View>
           </View>
           <View style={styles.slide3}>
           <Image source={require('./image/h2.jpeg')} style={styles.anh}/>
+          <View style={{alignItems:'center', }}>
+              <Text style={{fontSize:25,color:"black"}}>Veggie tomato mix</Text>
+              <Text style={{fontSize:22,color:"#FA4A0C"}}>N4,900</Text>
+            </View>
           </View>
         </Swiper>
       </View>
 
-      <View style={styles.content1}>
+      {/* <View style={styles.content1}>
         <Text style={{fontSize:25,color:"black"}}>Veggie tomato mix</Text>
         <Text style={{fontSize:22,color:"#FA4A0C"}}>N1,900</Text>
-      </View>
+      </View> */}
 
       <View style={styles.content2}>
           <View style={{width:'70%'}}>
@@ -70,13 +92,13 @@ const styles = StyleSheet.create({
 
   head: {
     width: '100%',
-    height: 200,
+    height: 400,
   
   },
 
   anh: {
     width: '100%',
-    height:'90%'
+    height:'75%'
   },
   content1: {
     width: '100%',
